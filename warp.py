@@ -50,29 +50,29 @@ def run():
 
 g = 0
 b = 0
-while True:
-	result = run()
-	if result == 200:
-		g = g + 1
-		os.system('cls' if os.name == 'nt' else 'clear')
-		print("")
-		print("Getting WARP+ Traffic")
-		print("")
-		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
-		for i in range(len(animation)):
-			time.sleep(0.5)
-			sys.stdout.write("\r[+] Preparing... " + animation[i % len(animation)])
-			sys.stdout.flush()
-		print(f"\n[-] WORK ON ID: {referrer}")    
-		print(f"[:)] {g} GB has been successfully added to your account.")
-		print(f"[#] Total: {g} Good {b} Bad")
-		print("[*] After 18 seconds, a new request will be sent.")
-		time.sleep(18)
-	else:
-		b = b + 1
-		os.system('cls' if os.name == 'nt' else 'clear')
-		print("")
-		print("Getting WARP+ Traffic")
-		print("")
-		print("[:(] Error when connecting to server.")
-		print(f"[#] Total: {g} Good {b} Bad")	
+
+result = run()
+if result == 200:
+	g = g + 1
+	os.system('cls' if os.name == 'nt' else 'clear')
+	print("")
+	print("Getting WARP+ Traffic")
+	print("")
+	animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
+	for i in range(len(animation)):
+		time.sleep(0.5)
+		sys.stdout.write("\r[+] Preparing... " + animation[i % len(animation)])
+		sys.stdout.flush()
+	print(f"\n[-] WORK ON ID: {referrer}")    
+	print(f"[:)] {g} GB has been successfully added to your account.")
+	print(f"[#] Total: {g} Good {b} Bad")
+	print("[*] After 18 seconds, a new request will be sent.")
+	time.sleep(18)
+else:
+	b = b + 1
+	os.system('cls' if os.name == 'nt' else 'clear')
+	print("")
+	print("Getting WARP+ Traffic")
+	print("")
+	print("[:(] Error when connecting to server.")
+	print(f"[#] Total: {g} Good {b} Bad")	
